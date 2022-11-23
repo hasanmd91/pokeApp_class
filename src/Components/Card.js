@@ -4,11 +4,12 @@ import style from "./card.module.css";
 
 const Card = (props) => {
   return (
-    <div className={style.card}>
-      <img src={props.image} alt={props.name} />
-      <h3> {props.name[0].toUpperCase() + props.name.slice(1)}</h3>
-      <Link> See more </Link>
-    </div>
+    <Link>
+      <div className={style.card}>
+        <img src={props.image} alt={props.name} />
+        <h3> {props.name[0].toUpperCase() + props.name.slice(1)}</h3>
+      </div>
+    </Link>
   );
 };
 

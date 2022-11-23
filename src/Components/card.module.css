@@ -16,3 +16,9 @@
   width: 150px;
   height: 170px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
