@@ -13,7 +13,13 @@ export default class Pokelist extends Component {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ data: data.results, isLoading: false });
+        const fetches = data.results.map((p) => {
+          return fetch(p.url).then((res) => res.json());
+        });
+
+        Promise.all(fetches).then((res) =>
+          this.setState({ data: res, isLoading: false })
+        );
       });
   }
 
@@ -26,7 +32,11 @@ export default class Pokelist extends Component {
     return (
       <div className={style.container}>
         {this.state.data.map((card) => (
-          <Card name={card.name} key={card.name} />
+          <Card
+            name={card.name}
+            key={card.name}
+            image={card.sprites.other["official-artwork"].front_default}
+          />
         ))}
       </div>
     );
