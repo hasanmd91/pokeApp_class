@@ -28,7 +28,6 @@ export default class Pokelist extends Component {
       return <p> Loading....</p>;
     }
 
-    console.log(this.state.data);
     return (
       <div className={style.container}>
         {this.state.data.map((card) => (

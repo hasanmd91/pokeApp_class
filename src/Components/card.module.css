@@ -1,5 +1,5 @@
 .card {
-  width: 210px;
+  width: 230px;
   height: 300px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 5px;
@@ -15,10 +15,4 @@
 .card img {
   width: 150px;
   height: 170px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
 }

@@ -1,0 +1,12 @@
+.pokesinglecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.pokesinglecard img {
+  width: 250px;
+  height: 220px;
+}
