@@ -6,7 +6,7 @@
   margin: 15px;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: 0px solid;
   justify-content: center;
   align-items: center;
   gap: 10px;
