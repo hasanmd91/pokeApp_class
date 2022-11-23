@@ -1,7 +1,7 @@
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { Component } from "react";
 import Layout from "./Components/pages/Layout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Pokelist from "./Components/Pokelist";

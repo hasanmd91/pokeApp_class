@@ -16,7 +16,12 @@
   text-transform: uppercase;
   transition: all 0.4s;
 }
-.navbar ul li a.hover {
+.navbar ul li a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.navbar ul li a.active {
   color: orange;
   text-decoration: underline;
 }
