@@ -1,9 +1,11 @@
 import React from "react";
 
+import style from "./home.module.css";
+
 const Home = () => {
   return (
     <div>
-      <h1> this is home </h1>
+      <h1> Pokemon</h1>
     </div>
   );
 };
